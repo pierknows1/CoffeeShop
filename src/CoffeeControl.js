@@ -1,4 +1,6 @@
 import React from "react";
+import CoffeeList from "./CoffeeList";
+import CoffeeDetail from "./CoffeeDetail";
 
 
 class CoffeeControl extends React.Component {
@@ -7,7 +9,9 @@ class CoffeeControl extends React.Component {
         super(props);
         this.state = {
             formVisible: false,
-            mainItemList: []
+            mainCoffeeList: []
         };
     }
 }
+
+export default CoffeeControl;
