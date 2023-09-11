@@ -1,10 +1,10 @@
 import React from "react";
-import CoffeeControl from "./Coffee";
+import CoffeeControl from "../CoffeeControl";
 
 function App(){
     return(
         <React.Fragment>
-            <CoffeeControl/>
+            <CoffeeControl />
         </React.Fragment>
     );
 }

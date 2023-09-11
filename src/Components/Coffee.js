@@ -17,7 +17,7 @@ function Coffee(props) {
 Coffee.propTypes = {
     name: PropTypes.string,
     price: PropTypes.number,
-    description: PropTypes.description,
+    description: PropTypes.string,
     quantity: PropTypes.number
 }
 
