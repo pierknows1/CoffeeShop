@@ -13,15 +13,13 @@ return (
         <p>Quantity: {coffee.quantity}</p>
 
         <button onClick={props.onClickEdit}>Update Coffee</button>
-
     </React.Fragment>
-);
-
+    );
 }
 
 CoffeeDetails.propTypes = {
     coffee: PropTypes.object,
-    onClickEdit: PropTypes.func
+    onClickEdit: PropTypes.func,
 };
 
 export default CoffeeDetails;

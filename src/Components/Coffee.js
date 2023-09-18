@@ -20,7 +20,7 @@ Coffee.propTypes = {
     description: PropTypes.string,
     quantity: PropTypes.number,
     id: PropTypes.string,
-    whenCoffeeClicked: PropTypes.func
-}
+    whenCoffeeClicked: PropTypes.func,
+};
 
 export default Coffee;
