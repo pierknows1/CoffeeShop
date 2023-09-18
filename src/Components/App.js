@@ -1,5 +1,5 @@
 import React from "react";
-import CoffeeControl from "../CoffeeControl";
+import CoffeeControl from "./CoffeeControl";
 
 function App(){
     return(
