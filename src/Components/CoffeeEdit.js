@@ -2,13 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 
-const EditCoffeeForm = (props) => {
+const CoffeeEdit = (props) => {
     const { coffee } = props;
 
-    function editCoffeeFormSubmission(event)
-    {
+    function editCoffeeFormSubmission(event) {
         event.preventDefault();
-        props.EditCoffeeForm();
         props.onEditCoffee({
             name: event.target.name.value,
             price: event.target.price.value,
@@ -23,13 +21,12 @@ const EditCoffeeForm = (props) => {
         <ReusableForm formSubmission={editCoffeeFormSubmission}
         buttonText="Update Coffee" />
         </React.Fragment>
-        
     );
 }
 
-EditCoffeeForm.propTypes = {
+CoffeeEdit.propTypes = {
     coffee: PropTypes.object,
     onEditCoffee: PropTypes.func,
 };
 
-export default EditCoffeeForm;
+export default CoffeeEdit;

@@ -1,16 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ReusableForm(props) {
+const ReusableForm = (props) => {
     return (
         <React.Fragment>
+            <div>
             <form onSubmit = {props.formSubmission}>
                 <input
                 type='text'
                 name='name'
-                placeholder='' />
-                <button type='submit'>Submit</button>
+                placeholder='Name' />
+                <input 
+                type='text'
+                name='price'
+                placeholder='Price' />
+                <input
+                type='number'
+                name='quantity'
+                placeholder='Quantity' />
+                 <input
+                type='number'
+                name='description'
+                placeholder='Description' />
+                <button type='submit'>{props.buttonText}</button>
             </form>
+            </div>
         </React.Fragment>
     );
 }
@@ -18,5 +32,5 @@ function ReusableForm(props) {
 ReusableForm.propTypes = {
     formSubmission: PropTypes.func,
     buttonText: PropTypes.string
-};
+}
 export default ReusableForm;

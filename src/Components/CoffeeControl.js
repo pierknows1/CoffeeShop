@@ -4,7 +4,6 @@ import CoffeeDetail from "./CoffeeDetail";
 import CoffeeForm from "./CoffeeForm";
 import CoffeeEdit from "./CoffeeEdit";
 
-
 class CoffeeControl extends React.Component {
 
     constructor(props) {
