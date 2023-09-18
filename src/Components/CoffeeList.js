@@ -13,29 +13,23 @@ const mainCoffeeList = [
     function CoffeeList(props) {
         return (
             <React.Fragment>
-            {mainCoffeeList.map((coffee, index) =>
+            {mainCoffeeList.map((coffee) =>
                 <Coffee
+                    whenCoffeeClicked={props.onCoffeeSelection}
                     name={coffee.name}
                     description={coffee.description}
                     quantity={coffee.quantity}
                     price={coffee.price}
-                    key={index} />
-                )}
-    
-            {props.mainCoffeeList.map((coffee, index) =>
-                <Coffee
-                    name={coffee.name}
-                    description={coffee.description}
-                    quantity={coffee.quantity}
-                    price={coffee.price}
-                    key={index} />
+                    id={coffee.id}
+                    key={coffee.id} />
                 )}
             </React.Fragment>
         );
     }
     
     CoffeeList.propTypes = {
-        mainCoffeeList: PropTypes.array
+        mainCoffeeList: PropTypes.array,
+        onCoffeeSelection: PropTypes.func
     }
     
     export default CoffeeList;
